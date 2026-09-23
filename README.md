@@ -63,16 +63,16 @@ To empirically evaluate the impact of Foreign Direct Investment (FDI) inflows on
 
 > **Access Date:** June 26, 2026
 
-### **Data Collection & Preprocessing Pipeline**
+# Data Collection & Preprocessing Pipeline
 
-#### **1. Data Ingestion**
+## 1. Data Ingestion
 The dataset is constructed by merging two open-access repositories:
 * **Our World in Data (OWID):** Directly queried for $\text{CO}_2$ emissions per capita, GDP, total population, and primary energy consumption per capita.
 * **World Bank (WDI):** Manually collected CSV files capturing key macroeconomic indicators: Net Foreign Direct Investment (`fdi`), Trade Openness (`trade`), and Industrial Value Added (`industry`).
 
 ---
 
-#### **2. OWID Data Cleaning & Filtering**
+## 2. OWID Data Cleaning & Filtering
 The raw OWID dataset contained historical emissions logs along with non-country regional aggregations (e.g., global totals, economic blocs).
 * **Filtering Criteria:**
   1. Restricted timeframe to **2000–2022** matching the research scope.
@@ -82,7 +82,7 @@ The raw OWID dataset contained historical emissions logs along with non-country 
 
 ---
 
-#### **3. World Bank Reshaping & Restructuring**
+## 3. World Bank Reshaping & Restructuring
 World Bank raw CSV files were delivered in a **wide format** (where each year is represented as a separate column), which is incompatible with OWID's **long format** (panel structure where each row represents a unique country-year observation).
 * **Data Transformation (`read_wb_csv` function):**
   * Bypassed initial 4-line metadata headers.
@@ -93,7 +93,7 @@ World Bank raw CSV files were delivered in a **wide format** (where each year is
 
 ---
 
-####  DATASET INTEGRATION & FINAL MERGING DATA TECHNIQUE**
+# DATASET INTEGRATION & FINAL MERGING DATA TECHNIQUE
 * **Integration Strategy:** Merged the cleaned OWID panel with the structured World Bank indicators using a `Left Join` on primary key pair `(iso_code, year)`, preserving the OWID panel scope as the base frame.
 * **Casewise Deletion:** Removed records with missing observations across any explanatory variable to guarantee a balanced, complete panel for econometric estimation.
 * **Final Panel Dataset Metrics:**
@@ -101,8 +101,8 @@ World Bank raw CSV files were delivered in a **wide format** (where each year is
   * **Coverage:** **151 countries** over a 23-year timeframe (2000–2022).
   * **Completeness:** 0.0% missing data rate across all 10 analysis features.
     
---- PROJECT OUTPUT --- 
-### **Empirical Findings & Answers to Core Research Questions**
+# PROJECT OUTPUT 
+## Empirical Findings & Answers to Core Research Questions
 
 Synthesis of empirical estimations from optimal panel econometric specifications (Fixed Effects Model with interaction terms, FEM - Model M5a) yields conclusive answers to the six overarching research questions:
 
