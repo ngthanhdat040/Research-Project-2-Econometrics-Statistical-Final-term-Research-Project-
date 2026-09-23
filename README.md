@@ -1,10 +1,10 @@
 # Research-Project-2-Econometrics-Statistical-Final-term-Research-Project-
-Construct Full-Scaled Predictive model by application of ETL procedure, Construct Data Modeling, Descriptive Statistical &amp; Hypothesis Testing, Advanced Econometric &amp; Logistic Regression Modeling.
---- RESEARCH CONTEXT ---
+
+# RESEARCH CONTEXT 
 The debate on the environmental impact of Foreign Direct Investment (FDI) originated during the trade liberalization wave of the 1970s, establishing two contrasting theoretical paradigms in international environmental economics:Pollution Haven Hypothesis (PHH) (Copeland & Taylor, 1994):Strict environmental regulations in developed nations elevate operational compliance costs, driving carbon-intensive industries to relocate FDI toward developing countries with weaker regulatory frameworks. Consequently, global pollution is geographically displaced rather than reduced $\rightarrow$ FDI accelerates environmental degradation.Pollution Halo Hypothesis (PHaH) (Eskeland & Harrison, 2003):FDI acts as a channel for technology transfer, bringing superior environmental management standards, cleaner production techniques, and positive technology spillovers to host countries $\rightarrow$ FDI abates carbon emissions and promotes green growth.
 While these hypotheses make conflicting predictions based on divergent assumptions about the nature of FDI—whether as a cost-arbitrage tool or a technological spillover engine—the empirical literature regarding the relationship between FDI and $\text{CO}_2$ emissions remains highly fragmented and contradictory.This research addresses a critical methodological gap: Is this empirical disagreement a reflection of inherent economic complexity, or a result of overgeneralizing findings across heterogeneous country panels?
 
---- RESEARCH QUESTIONS & OBJECTIVE ---
+# RESEARCH QUESTIONS & OBJECTIVE 
 Building upon the theoretical framework and analytical approach, this study focuses on resolving six core research questions across its empirical chapters:
 1. Direction and Magnitude of FDI Impact: How does FDI impact CO2 emissions, and what is the direction of this effect? Furthermore, are there systematic variations across distinct national income tiers?
 2. Attribution and Confounding Effects: Is the impact of FDI on emissions substantial enough to be identified as a primary emission driver, or is it heavily mediated or dominated by other macroeconomic factors?
@@ -13,7 +13,7 @@ Building upon the theoretical framework and analytical approach, this study focu
 5. Temporal Stability: Is the empirical relationship between FDI and CO2 emissions stable over time, or does it shift across different developmental phases over the past two decades?
 6. Unobserved Heterogeneity & Model Specification: Do country-specific unobserved characteristics alter the statistical significance of FDI's impact on emissions? Specifically, do fixed effects or random effects better capture cross-national heterogeneity?
 
---- DATA MODELING WORKFLOW ---
+# DATA MODELING WORKFLOW 
 1.Data Preprocessing & Preliminary Diagnostics:
 - Data Preprocessing: Handling missing values, filtering outliers, transforming non-stationary variables (e.g., logarithmic transformations to compute elasticities), and preparing clean cross-sectional/panel relational structures.\
 - Summary Statistics & Diagnostics: Computing descriptive statistics, profiling distributions, and performing initial normality tests.
